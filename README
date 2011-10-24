@@ -1,0 +1,13 @@
+This project was originally developed by [Stuart Sierra](http://stuartsierra.com/2008/04/24/a-million-little-files)
+
+I've slightly modified it in order to make it fit my need. My first objective was to extend the [Terrier IR platform](http://www.terrier.org) so that it can process large text collection packed up in sequence files (see [issue 182](http://terrier.org/issues/browse/TR-182))
+
+
+#### How to use
+
+1. ant (it will create tar-to-seq.jar)
+2. java -jar tar-to-seq.jar [-c] <collection path> <destination path>
+
+example: java -jar tar-to-seq.jar -c trec.tar.gz trec.seq
+
+Use the optional -c option to enable record compression
